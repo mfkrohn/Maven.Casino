@@ -8,7 +8,7 @@ public class WarTest {
     @Test
     public void getPlayer1HandTest(){
         // given
-        Integer expected = 26;
+        Integer expected = 52;
         // when
         Integer actual = War.getPlayer1Hand().size();
         // then
@@ -18,7 +18,7 @@ public class WarTest {
     @Test
     public void getPlayer2HandTest(){
         // given
-        Integer expected = 26;
+        Integer expected = 52;
         // when
         Integer actual = War.getPlayer2Hand().size();
         // then
