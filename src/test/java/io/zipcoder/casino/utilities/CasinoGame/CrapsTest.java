@@ -457,7 +457,7 @@ public class CrapsTest {
     @Test
     public void testOddsSimpleBet(){
         expectedBet =50;
-        expectedBalance = 500 + (110);
+        expectedBalance = 500 + (160);
         Integer startingPoint = 6;
         craps.setDiceSum(3,3);
         craps.point = startingPoint;
@@ -473,7 +473,7 @@ public class CrapsTest {
     @Test
     public void testOddsBet(){
         expectedBet =50;
-        expectedBalance = 500 + (110);
+        expectedBalance = 500 + (160);
         Integer startingPoint = 0;
         craps.setDiceSum(3,3);
         craps.point = startingPoint;
@@ -487,7 +487,7 @@ public class CrapsTest {
     @Test
     public void testOddsBet2(){
         expectedBet =50;
-        expectedBalance = 500 + (125);
+        expectedBalance = 500 + (175);
         Integer startingPoint = 0;
         craps.setDiceSum(2,3);
         craps.point = startingPoint;
@@ -501,7 +501,7 @@ public class CrapsTest {
     @Test
     public void testOddsBet3(){
         expectedBet =50;
-        expectedBalance = 500 + (150);
+        expectedBalance = 500 + (200);
         Integer startingPoint = 0;
         craps.setDiceSum(2,2);
         craps.point = startingPoint;
