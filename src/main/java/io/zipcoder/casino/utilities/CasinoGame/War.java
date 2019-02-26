@@ -61,7 +61,7 @@ public class War extends CardGame implements Game {
                 player1DiscardPile.push(cardForTurn2);
                 System.out.println("Player 1 wins this round");
                 System.out.println();
-                if (player1Hand.isEmpty()) {
+                if (player2Hand.isEmpty()) {
                     if (player1DiscardPile.size() > player2DiscardPile.size()) {
                         System.out.println("Player 1 wins, Game Over");
                         System.out.println();
@@ -129,6 +129,8 @@ public class War extends CardGame implements Game {
                         } else {
                             p2WarCard = p2WarCard4;
                         }
+                        System.out.println("Player 1 picked: " + p1WarCard.toString());
+                        System.out.println("Player 2 picked: " + p2WarCard.toString());
                         if (p1WarCard.cardDefaultEnum.compareTo(p2WarCard.cardDefaultEnum) > 0) {
                             System.out.println("Player 1 wins the war");
                             System.out.println();
@@ -154,22 +156,14 @@ public class War extends CardGame implements Game {
                             player2DiscardPile.push(p2WarCard4);
                             break;
                         }
-                    } else if (player1Hand.size() < 4 && player2Hand.size() >= 4){
-                        System.out.println("Player 1 ran out of cards...");
-                        System.out.println("Player 2 wins, Game Over");
-                        System.out.println();
-                        return;
-                    } else if (player2Hand.size() < 4 && player1Hand.size() >= 4){
-                        System.out.println("Player 2 ran out of cards...");
-                        System.out.println("Player 1 wins, Game Over");
-                        System.out.println();
-                        return;
                     } else if (player1Hand.size() < 4 && player2Hand.size() < 4){
                         if (player1DiscardPile.size() > player2DiscardPile.size()){
+                            System.out.println("Players are out of cards");
                             System.out.println("Player 1 wins, Game Over");
                             System.out.println();
                             return;
                         } else if (player1DiscardPile.size() < player2DiscardPile.size()){
+                            System.out.println("Players are out of cards");
                             System.out.println("Player 2 wins, Game Over");
                             System.out.println();
                             return;
