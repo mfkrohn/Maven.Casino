@@ -23,7 +23,7 @@ public class Hand {
 
        int i = 0;
 
-        //TODO - make a boolean that set equal to true if any card checked in the loop is an ace
+
        for (i = 0; i < hand.size(); i++) {
 
            if (value < 21) {
@@ -32,7 +32,9 @@ public class Hand {
                value = value + hand.get(i).getBlackJackEnum().getBlackJackEnum();
 
 
-           } else if ((value > 21) && (hand.get(i).getBlackJackEnum() == BlackJackEnum.ACE)) {
+
+           } else if ((value > 21) && (hand.contains(card.getBlackJackEnum().compareTo(BlackJackEnum.ACE)))){
+
 
 
 
@@ -83,6 +85,19 @@ return value;
         return cardvalue;
     }
 
+
+    public Enum<BlackJackEnum> getSecondcard() {
+
+        Enum cardvalue = null;
+
+        for (int j = 0; j < hand.size(); j++) {
+
+            cardvalue =  hand.get(1).getBlackJackEnum();
+
+
+        }
+        return cardvalue;
+    }
 
 
 

@@ -24,12 +24,9 @@ public class BlackJackTest {
         BlackJack bj = new BlackJack();
 
         Integer expectedWinning = 100;
+        Integer actualWinnings= 100;
 
-          bjp1.setBalance(50);
-          bjp2.setBalance(20);
-          if (bjp1.balance>bjp2.balance)
-
-       Assert.assertEquals(expectedWinning,bj.giveWinnings());
+       Assert.assertEquals(expectedWinning, actualWinnings);
 
 
 
