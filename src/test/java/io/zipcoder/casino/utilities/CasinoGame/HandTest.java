@@ -171,6 +171,57 @@ public class HandTest {
 
 
     }
+    @Test
+
+    public void getfirstelementTest() {
+
+
+
+        Card cd1 = new Card(BlackJackEnum.QUEEN,Suit.SPADE);
+
+        Card cd2 = new Card(BlackJackEnum.QUEEN,Suit.SPADE);
+        Card cd3 = new Card(BlackJackEnum.QUEEN,Suit.SPADE);
+
+
+        ArrayList<Card> myList = new ArrayList<Card>();
+
+        Hand myhand = new Hand();
+        myhand.addCard(cd1);
+        myhand.addCard(cd2);
+        myhand.addCard(cd3);
+        BlackJackEnum expectedCardName = BlackJackEnum.QUEEN;
+        BlackJackEnum actualCardName = (BlackJackEnum)myhand.getfirstcard();
+
+        //Then
+        Assert.assertEquals(expectedCardName, actualCardName);
+
+    }
+    @Test
+
+    public void getsecondelementTest() {
+
+
+
+        Card cd1 = new Card(BlackJackEnum.QUEEN,Suit.SPADE);
+
+        Card cd2 = new Card(BlackJackEnum.ACE,Suit.SPADE);
+        Card cd3 = new Card(BlackJackEnum.QUEEN,Suit.SPADE);
+
+
+        ArrayList<Card> myList = new ArrayList<Card>();
+
+        Hand myhand = new Hand();
+        myhand.addCard(cd1);
+        myhand.addCard(cd2);
+        myhand.addCard(cd3);
+        BlackJackEnum expectedCardName = BlackJackEnum.ACE;
+        BlackJackEnum actualCardName = (BlackJackEnum)myhand.getSecondcard();
+
+        //Then
+        Assert.assertEquals(expectedCardName, actualCardName);
+
+    }
+
 
 
 
