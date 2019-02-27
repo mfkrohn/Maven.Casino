@@ -1,5 +1,10 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
+import io.zipcoder.casino.utilities.CasinoGame.CardGames.BlackJack.BlackJack;
+import io.zipcoder.casino.utilities.CasinoGame.Craps.Craps;
+import io.zipcoder.casino.utilities.CasinoGame.CardGames.GoFish.GoFish;
+import io.zipcoder.casino.utilities.CasinoGame.CardGames.War.War;
+
 import java.util.function.Supplier;
 
 public enum GameEnum {
