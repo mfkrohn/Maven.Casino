@@ -15,6 +15,8 @@ public enum GameEnum {
     }
 
     public Game create() {
+
+
         return supplier.get();
     }
 
@@ -23,7 +25,7 @@ public enum GameEnum {
         try {
             return valueOf(userInput);
         } catch (IllegalArgumentException iae) {
-            return valueOf(userInput.replaceAll(" ", "_"));
+            return valueOf("BLACKJACK");
         }
     }
 }

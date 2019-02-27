@@ -24,7 +24,18 @@ public class Craps extends DiceGame implements GamblingGame {
 
     @Override
     public void play() {
-        console.println("Welcome to craps!%n%n");
+        console.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"+"\n"+
+                "           CRAPS GAME                 "+"\n"+
+                "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"+"\n"+
+
+                "        .-------.    ______                           "+"\n"+
+                "       /   o   /|   /\\     \\                        "+"\n"+
+                "      /_______/o|  /o \\  o  \\                       "+"\n"+
+                "      | o     | | /   o\\_____\\                      "+"\n"+
+                "      |   o   |o/ \\o   /o    /                       "+"\n"+
+                "      |     o |/   \\ o/  o  /                        "+"\n"+
+                "      '-------'     \\/____o/                         "+"\n"+
+                "                                                      ");
         console.println("Your starting balance is: $" + crapsPlayer.getBalance());
         playing = true;
         while(playing){

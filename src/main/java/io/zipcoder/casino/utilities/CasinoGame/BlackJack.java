@@ -57,7 +57,20 @@ public class BlackJack extends CardGame implements GamblingGame {
     public void play() {
 
 
-        console.println("WELCOME TO BLACK JACK GAME " + alienEmojiString + "!!!!!!!! Player");
+        console.println("================================================"+"\n"+
+                "===WELCOME TO GROUP 4 $$$$"+alienEmojiString+"BlackJack"+alienEmojiString+"$$$$$==="+"\n"+
+                "================================================"+"\n"+
+                "                             .------.             "+"\n"+
+                "        .------.             |A .   |    "+"\n"+
+                "        |A_  _  |     .------| / \\ |     "+"\n"+
+                "        |( \\/ )|-----|A     |(_,_) |     "+"\n"+
+                "        | \\  / | /\\   ( )  |  I  A|           "+"\n"+
+                "        |  \\/ A|/  \\ (_x_) |.-----'           "+"\n"+
+                "        `-----+'\\  / | Y  A |                    "+"\n"+
+                "              |  \\/ A|-----'                   "+"\n"+
+                "              `------'                          "+"\n"+
+                "================================================"+"\n"+
+                "================================================");
         console.println("\uD83C\uDCC1" + " " + "\uD83C\uDCC1" + " " + "\uD83C\uDCC1" + " " + "\uD83C\uDCC1" + " " + "\uD83C\uDCC1"+"  " +
                 "    "+"\uD83C\uDCC1");
 
